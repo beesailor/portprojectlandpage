@@ -20,6 +20,7 @@
     
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
@@ -28,7 +29,7 @@
 
 <body>
 <!-- JUMBOTRON ROW -->
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron jumbotron-fluid">  
         <div class="container">
             <div class="row align-items-center text-center">
                 <div class="col-md-2">
@@ -45,145 +46,249 @@
         </div>
     </header>
 
-    <div>
-    <!-- lead magnet image and form go here -->
-    <H1>LEAD MAGNET IMAGE AND FORM GO HERE</H1>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#lawfirmNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#lawfirmNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cases We Handle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+<!-- breadcrumbs for other pages found at 8:55 of navbar lesson-->
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <!-- lead magnet image and form go here -->
+                <form>
+                    <div class="row">
+                        <label for="firstName" class="col-md-2">First Name </label>
+                        <div class="col-md-10">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <label for="lastName" class="col-md-2">Last Name </label>
+                        <div class="col-md-10">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>   
+                    <div class="row">
+                        <label for="areaCode" class="col-md-2">Area Code </label> 
+                        <div class="col-md-10">
+                            <input type="tel" id="areaCode" name="areaCode" placeholder="Area Code" />
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <label for="telNum" class="col-md-2">Phone Number </label> 
+                        <div class="col-md-10">
+                            <input type="tel" id="telNum" name="telNum" placeholder="Tel. Number" />
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <label for="email" class="col-md-2">Email </label>Email 
+                        <div class="col-md-10">
+                            <input type="email" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <label for="charges" class="col-md-2">Charges </label> 
+                        <div class="col-md-10">
+                            <input type="text" id="charges" name="charges" placeholder="Charges" />
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <label for="county" class="col-md-2">County of Arrest </label> 
+                        <div class="col-md-10">
+                            <input type="text" id="county" name="county" placeholder="County of Arrest" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        May we contact you? 
+                            <div class="col-md-10">
+                                <input type="radio" id="contactYes" name="contactRadios" value="yes" />
+                            </div>
+                            <label for="contactYes" class="col-md-2">Yes</label>
+                            <div class="col-md-10">
+                                <input type="radio" id="contactNo" name="contactRadios" value="no" />
+                            </div>
+                            <label for="contactNo" class="col-md-2">No</label>
+                        </div>
+                    <div class="row">
+                        <label for="other" class="col-md-2">Other </label>
+                        <textarea id="other" name="other" if="other" rows="5"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit">Click for Free Resource</button>
+                    </div>    
+                </form>
+            </div>
+        </div>    
     </div>
 
-    <!--VIDEO ROW  -->
-    <div>
-        <h1>What you don't know can really hurt you!</h1>
-        <p>How We Will Help You Right Now</p>
-        <H1>VIDEO GOES HERE</H1>       
+<!--VIDEO ROW  -->
+            <div class="col">
+                <h1 class="pl-md-3">What you don't know can really hurt you!</h1>
+                <p class="pl-md-3">How We Will Help You Right Now</p>
+                <H1 class="pl-md-3">VIDEO GOES HERE</H1>       
+            </div>
+        </div>
     </div>
 
 <!-- REVIEWS ROW WITH CAROUSEL -->
-    <div>
-        <h2>Reviews</h2>
-        <p>What clients are saying about Mark and Baron.</p>   
-    </div>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h2 class="pl-md-3">Reviews</h2>
+                <p class="pl-md-3">What clients are saying about Mark and Baron.</p>   
+            </div>
+        </div>
+    </div>    
 
 <!-- PROPOSITIONAL ROW WITH BUTTON -->
-    <div>
-        <h2>Your Rights Matter</h2>
-        <p></p>
-        <p></p>
-    </div>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h2 class="pl-md-3">Your Rights Matter</h2>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>    
+
 
 <!-- CASES WE HANDLE ROW WITH ACCORDIAN -->
 
-    <div>
-        <div>
-            <h2>Cases We Handle -</h2>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+            <h2 class="pl-md-3">Cases We Handle -</h2>
             
-            <h4>DWI: <small>First to Intoxication Manslaughter</small></h4>
+            <h4 class="pl-md-3">DWI: <small>First to Intoxication Manslaughter</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>
-            <h4>Theft: <small>Shoplifting to Robbery</small></h4>
+            <h4 class="pl-md-3">Theft: <small>Shoplifting to Robbery</small></h4>
                 <div class="d-none d-sm-block">    
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>
-            <h4>Assault: <small>Threat to Bodily Injury</small></h4>
+            <h4 class="pl-md-3">Assault: <small>Threat to Bodily Injury</small></h4>
                 <div class="d-none d-sm-block">   
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>Firearms: <small>Discharge to UCW</small></h4>
+            <h4 class="pl-md-3">Firearms: <small>Discharge to UCW</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>
-            <h4>Sexual Assault: <small>Children to Adult</small></h4>
+            <h4 class="pl-md-3">Sexual Assault: <small>Children to Adult</small></h4>
                 <div class="d-none d-sm-block">    
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>White Collar : <small>Embezzlement to Fraud</small></h4>
+            <h4 class="pl-md-3">White Collar : <small>Embezzlement to Fraud</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>
-            <h4>Drug: <small>Possession to Delivery</small></h4>
+            <h4 class="pl-md-3">Drug: <small>Possession to Delivery</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>
-            <h4>Post-Judgment: <small>Revocations</small></h4>
+            <h4 class="pl-md-3">Post-Judgment: <small>Revocations</small></h4>
                 <div class="d-none d-sm-block">        
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>Post-Judgment: <small>Adjudications</small></h4>
+            <h4 class="pl-md-3">Post-Judgment: <small>Adjudications</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>Post-Judgment: <small>Record Clearing</small></h4>
+            <h4 class="pl-md-3">Post-Judgment: <small>Record Clearing</small></h4>
                 <div class="d-none d-sm-block">
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>Post-Judgement: <small>Early Termination</small></h4>
+            <h4 class="pl-md-3">Post-Judgement: <small>Early Termination</small></h4>
                 <div class="d-none d-sm-block">        
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>    
-            <h4>Post-Judgment: <small>Discharge</small></h4>
+            <h4 class="pl-md-3">Post-Judgment: <small>Discharge</small></h4>
                 <div class="d-none d-sm-block">    
-                    <p>This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
                 </div>        
+            </div>
         </div>
     </div>
 
 <!-- PROPOSITIONAL ROW WITH BUTTON -->
-    <div>
-        <h2>Experience Matters</h2>
-        <p></p>
-        <p></p>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h2 class="pl-md-3">Experience Matters</h2>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
     </div>
 
 <!-- CASE RESULTS ROW WITH CAROUSEL-->
-    <div>
-        <ul>
-            <li>Case 1</li>
-            <li>Case 2</li>
-            <li>Case 3</li>
-            <li>Case 4</li>
-        </ul>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <ul>
+                    <li>Case 1</li>
+                    <li>Case 2</li>
+                    <li>Case 3</li>
+                    <li>Case 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-sm-2">
+                <h2> image </h2>
+            </div>  
+            <div class="col-3 col-sm-2">
+                <h2> image </h2>
+            </div>
+            <div class="col-3 col-sm-2">
+                <h2> button </btn>
+            </div> 
+            <div class="col-3 col-sm-2">
+                <h2> image </btn>
+            </div> 
+        </div>
     </div>
 
 <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-3 col-sm-2">
-                    <h2> image </h2>
-                </div>  
-                <div class="col-3 col-sm-2">
-                    <h2> image </h2>
-                </div>
-                <div class="col-3 col-sm-2">
-                    <h2> button </btn>
-                </div> 
-                <div class="col-3 col-sm-2">
-                    <h2> image </btn>
-                </div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
+                <div class="col">
                     <!-- this will turn into a nav bar and stay at the top when scrolling -->
-                    <h5>Links</h5>
+                    <h5 class="pl-5">Links</h5>
                     <ul>
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                        <li class="nav-item active text-white"><a class="nav-link text-white" href="#"><i class="fa fa-home fa-lg text-white"></i> Home</a></li>
+                        <li class="nav-item text-white"><a class="nav-link text-white" href="#"><i class="fa fa-list fa-lg text-white"></i> Cases We Handle</a></li>
+                        <li class="nav-item text-white"><a class="nav-link text-white" href="#"><i class="fa fa-address-card fa-lg text-white"></i> About</a></li>
+                        <li class="nav-item text-white"><a class="nav-link text-white" href="#"><i class="fa fa-info fa-lg text-white"></i> FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram text-white"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook text-white"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter text-white"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube text-white"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    Tel: 1-888-got-urbk<br />
-                    Email: contactus@yourfirm.com
+                <div class="col-sm-4 text-center text-white">
+                    <a role="button" class="btn btn-link" href="tel: +8888675309"></a><i class="fa fa-phone fa-lg text-white"></i> 1-888-got-urbk</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:contactus@pecrimlaw.com"></a><i class="fa fa-envelope fa-lg text-white"></i> contactus@pecrimlaw.com</a>
                 </div>
             </div>    
         </div>
@@ -196,4 +301,4 @@
 
 </body>
 
-</html>
+</html> 
