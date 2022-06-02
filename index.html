@@ -68,66 +68,63 @@
             <div class="col">
                 <!-- lead magnet image and form go here -->
                 <form>
-                    <div class="row">
-                        <label for="firstName" class="col-md-2">First Name </label>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
-                            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
-                        </div>
-                    </div>  
-                    <div class="row">
-                        <label for="lastName" class="col-md-2">Last Name </label>
-                        <div class="col-md-10">
-                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
-                        </div>
-                    </div>   
-                    <div class="row">
-                        <label for="areaCode" class="col-md-2">Area Code </label> 
-                        <div class="col-md-10">
-                            <input type="tel" id="areaCode" name="areaCode" placeholder="Area Code" />
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <label for="telNum" class="col-md-2">Phone Number </label> 
-                        <div class="col-md-10">
-                            <input type="tel" id="telNum" name="telNum" placeholder="Tel. Number" />
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <label for="email" class="col-md-2">Email </label>Email 
-                        <div class="col-md-10">
-                            <input type="email" id="email" name="email" placeholder="Email" />
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <label for="charges" class="col-md-2">Charges </label> 
-                        <div class="col-md-10">
-                            <input type="text" id="charges" name="charges" placeholder="Charges" />
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <label for="county" class="col-md-2">County of Arrest </label> 
-                        <div class="col-md-10">
-                            <input type="text" id="county" name="county" placeholder="County of Arrest" />
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                         </div>
                     </div>
-                    <div class="row">
-                        May we contact you? 
-                            <div class="col-md-10">
-                                <input type="radio" id="contactYes" name="contactRadios" value="yes" />
-                            </div>
-                            <label for="contactYes" class="col-md-2">Yes</label>
-                            <div class="col-md-10">
-                                <input type="radio" id="contactNo" name="contactRadios" value="no" />
-                            </div>
-                            <label for="contactNo" class="col-md-2">No</label>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
                         </div>
-                    <div class="row">
-                        <label for="other" class="col-md-2">Other </label>
-                        <textarea id="other" name="other" if="other" rows="5"></textarea>
                     </div>
-                    <div class="row">
-                        <button type="submit">Click for Free Resource</button>
-                    </div>    
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="charges" class="col-md-2 col-form-label">Charges</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="charges" name="charges" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            May we contact you?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="other" class="col-md-2 col-form-label">Other</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="other" name="other" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>    
@@ -288,7 +285,7 @@
                 </div>
                 <div class="col-sm-4 text-center text-white">
                     <a role="button" class="btn btn-link" href="tel: +8888675309"></a><i class="fa fa-phone fa-lg text-white"></i> 1-888-got-urbk</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:contactus@pecrimlaw.com"></a><i class="fa fa-envelope fa-lg text-white"></i> contactus@pecrimlaw.com</a>
+                    <a role="button" class="btn btn-link" href="mailto:baroneliason@gmail.com"></a><i class="fa fa-envelope fa-lg text-white"></i> baroneliason@gmail.com</a>
                 </div>
             </div>    
         </div>
