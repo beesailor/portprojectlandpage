@@ -45,15 +45,15 @@
                         <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
                     </ul>
                 </div>
+                <a class="navbar-brand" href="#"><img src="images/white-star-icon-13227.png" height="30" width="30" /></a>
             </div>    
         </nav>
-        <div class="container">
+        <div class="container">   
             <div class="row align-items-center text-center">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="images/ladyjustice.png" class="img-fluid" />
                 </div>
-                
-                <div>
+                <div class="col">
                     <h1>Law Office of Pillsbury & Eliason</h1>
                     <h2>When the law attacks, we have your back!</h2>
                 </div>
@@ -65,30 +65,34 @@
     </header>
     
 <!-- breadcrumbs for other pages found at 8:55 of navbar lesson-->
+    <div class="container">
+        <div class="row">
 
+        </div>
+    </div>
     <div class="container">
         <div class="row align-items-center">
             <div class="col col-md-6 text-center">
                 <img class="image-fluid image-thumbnail" src="images/bookcover.jpeg"/>
-                <p>What you don't know can really hurt you!</br>  Get the answers you need right now in Baron Eliason's free resource:</br> SURVIVAL GUIDE:</br> What really happens in a criminal case and how to protect yourself! </p>
+                <h4>What you don't know can really hurt you!</br>  Get the answers you need right now in Baron Eliason's free resource:</br> <h2>SURVIVAL GUIDE:</br> What really happens in a criminal case, and how to protect yourself! </h2></h4>
             </div>  
                 <div class="col col-md-6">
                     <!-- form goes here -->
                     <form>
                         <div class="form-group row">
-                            <label for="firstName" class="col-md-2 col-form-label">First</label>
+                            <label for="firstName" class="col-md-2 col-form-label"></label>
                             <div class="col-md-10">
                                 <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lastName" class="col-md-2 col-form-label">Last</label>
+                            <label for="lastName" class="col-md-2 col-form-label"></label>
                             <div class="col-md-10">
                                 <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="areaCode" class="col-md-2 col-form-label">Phone</label>
+                            <label for="areaCode" class="col-md-2 col-form-label"></label>
                             <div class="col-5 col-md-3">
                                 <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
                             </div>
@@ -97,34 +101,22 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <label for="email" class="col-md-2 col-form-label"></label>
                             <div class="col-md-10">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="charges" class="col-md-2 col-form-label">Charges</label>
+                            <label for="charges" class="col-md-2 col-form-label"></label>
                             <div class="col-md-10">
                                 <textarea class="form-control" id="charges" name="charges" placeholder="Charges" rows="3"></textarea>
                             </div>
                         </div>
+                        
                         <div class="form-group row">
-                            <!-- <div class="col offset-md-2">
-                                May we contact you to set up a free consult?
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
-                                    <label for="contactYes" class="form-check-label">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
-                                    <label for="contactNo" class="form-check-label">No</label>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="form-group row">
-                            <label for="other" class="col-md-2 col-form-label">Other</label>
+                            <label for="other" class="col-md-2 col-form-label"></label>
                             <div class="col-md-10">
-                                <textarea class="form-control" id="other" name="other" rows="8"></textarea>
+                                <textarea class="form-control" id="other" name="other" placeholder="Other" rows="8"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -184,56 +176,151 @@
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col">
-            <h2 class="pl-md-3">Cases We Handle -</h2>
+            <h2 class="pl-md-3 text-center">Cases We Handle </h2>
             
-            <h4 class="pl-md-3">DWI: <small>First to Intoxication Manslaughter</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+            <div id="accordian">
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#dwi">
+                                <h3>DWI <small>- 1st to Intoxication Manslaughter</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse show" id="dwi" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <h4 class="pl-md-3">Theft: <small>Shoplifting to Robbery</small></h4>
-                <div class="d-none d-sm-block">    
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#theft">
+                                <h3>Theft <small>- Shoplifting to Robbery</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="theft" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <h4 class="pl-md-3">Assault: <small>Threat to Bodily Injury</small></h4>
-                <div class="d-none d-sm-block">   
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">Firearms: <small>Discharge to UCW</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#assault">
+                                <h3>Assault <small>- Threat to Bodily Injury</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="assault" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <h4 class="pl-md-3">Sexual Assault: <small>Children to Adult</small></h4>
-                <div class="d-none d-sm-block">    
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">White Collar : <small>Embezzlement to Fraud</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#firearms">
+                                <h3>Firearms <small>- Discharge to UCW</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="firearms" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <h4 class="pl-md-3">Drug: <small>Possession to Delivery</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#sexaslt">
+                                <h3>Sexual Assault <small>- Children to Adult</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="sexaslt" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <h4 class="pl-md-3">Post-Judgment: <small>Revocations</small></h4>
-                <div class="d-none d-sm-block">        
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">Post-Judgment: <small>Adjudications</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">Post-Judgment: <small>Record Clearing</small></h4>
-                <div class="d-none d-sm-block">
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">Post-Judgement: <small>Early Termination</small></h4>
-                <div class="d-none d-sm-block">        
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>    
-            <h4 class="pl-md-3">Post-Judgment: <small>Discharge</small></h4>
-                <div class="d-none d-sm-block">    
-                    <p class="pl-md-3">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
-                </div>        
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#whitecollar">
+                                <h3>White Collar <small>- Embezzlement to Fraud</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="whitecollar" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#drug">
+                                <h3>Drug <small>- Possession to Delivery</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="drug" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#revocation">
+                                <h3>Post-Judgment <small>- Revocations</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="revocation" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#earlytermination">
+                                <h3>Post-Judgment <small>- Early Termination</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="earlytermination" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#recordclearing">
+                                <h3>Post-Judgment <small>- Record Clearing</small></h3>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="recordclearing" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is a placeholder for adding some details about this type of case that might be helpful to know</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
             </div>
         </div>
     </div>
@@ -306,6 +393,7 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube text-white"></i></a>
                 </div>
                 <div class="col-sm-4 text-center text-white">
+                    <h5>Contact Us</h5>
                     <a role="button" class="btn btn-link" href="tel: +8888675309"></a><i class="fa fa-phone fa-lg text-white"></i> 1-888-got-urbk</a><br />
                     <a role="button" class="btn btn-link" href="mailto:baroneliason@gmail.com"></a><i class="fa fa-envelope fa-lg text-white"></i> baroneliason@gmail.com</a>
                 </div>
