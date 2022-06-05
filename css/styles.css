@@ -2,37 +2,42 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h2 {
-    font-family: "Merriweather";
-    color: navy
+.navbar {
+    background-color: rgb(205, 62, 62);
+}
+
+.jumbotron {
+    background-color: rgb(205, 62, 62);
 }
 
 h1, h3, h5 {
     color: white;
 }
 
+h2 {
+    font-family: "Merriweather";
+    color: navy
+}
+
 h4 {
     color: red;
 }
 
-header h2 {
-    color: navy;
-}
 header h1, h3, h4, h5{
     color: white
 }
 
-footer {
-    background-color: navy;
-    padding: 20px 0;
+header h2 {
+    color: navy;
 }
 
 footer h5 {
     color: red
 }
 
-.jumbotron {
-    background-color: rgb(205, 62, 62);
+.row-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
 }
 
 .row-content {
@@ -56,8 +61,12 @@ footer h5 {
     object-fit: contain;
 }
 
-.navbar {
-    background-color: red;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid red;
 }
 
 a, a:hover {
@@ -65,22 +74,15 @@ a, a:hover {
     text-decoration: none;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.row-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 100%;
-}
+/* footer {
+    background-color: red;
+    padding: 20px 0;
+} */
 
-.carousel {
-    border: solid red;
-}
-
-.image-cropper {
+/* .image-cropper {
     width: 100px;
     height: 100px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-}
+} */
